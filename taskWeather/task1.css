@@ -1,0 +1,130 @@
+body{
+    height: 700px;
+    background: linear-gradient(90deg, rgba(128, 128, 128, 0.68), rgba(128, 128, 128, 0.47), lightgrey) no-repeat;
+    font-family: sans-serif;
+}
+.date{
+    width: 50px;
+    float: left;
+}
+.year{
+    float: right;
+}
+.container{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+}
+.time span{
+    font-size: 1.7em;
+    font-weight: 500;
+}
+.black, .circle{
+    margin-left: 50px;
+}
+.black{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin-top: 5px;
+    background-color: black;
+    z-index: 200;
+    box-shadow: 5px 5px 20px 2px #2a2c2a;
+}
+.white{
+    width: 150px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.37);
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 150px;
+    opacity: 0.8;
+    box-shadow: 3px 3px 0 0 rgba(128, 128, 128, 0.73);
+}
+.circle{
+    width: 33px;
+    height: 33px;
+    background: linear-gradient(117deg, rgb(0 0 0 / 46%), #000000e6);
+    margin-top: 15px;
+    box-shadow:3px 3px 4px -1px rgb(255 255 255 / 40%);
+    border-radius: 50%;
+}
+#city{
+    font-size: 0.7em;
+}
+.close, #city, #deg, #date{
+    color: white;
+    margin: 7px;
+    opacity: 0.7;
+}
+.close{
+    font-weight: 100;
+    display: inline-block;
+    float: right;
+}
+#deg{
+    display: inline-block;
+    float: left;
+    margin-top: 130px;
+    font-size: 3em;
+    font-weight: bold;
+    margin-right: 20px;
+}
+#city{
+    margin-left: -80px;
+}
+sup{
+    font-size: 30px;
+}
+#date{
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: normal;
+    opacity: 0.3;
+    margin: 0px;
+    margin-top: 170px;
+    float: right;
+    margin-right: -20px;
+}
+.white .close{
+    color: black;
+    opacity: 1;
+    font-weight: bold;
+}
+table{
+    margin-top: 50px;
+    margin-right: 0;
+    margin-left: 10px;
+}
+tr:first-child td{
+    color: gray;
+    opacity: 0.7;
+}
+td{
+    font-size: 0.8em;
+}
+#button1{
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    background-color: gray;
+    opacity: 0.7;
+    left: -125px;
+    top: -125px;
+    position: relative;
+    font-size: 1.6em;
+    font-weight: normal;
+    text-align: center;
+    box-shadow: 0 0 2px 1px #1a1717;
+}
+img{
+    display: inline-block;
+    float: right;
+    margin-top: -270px;
+    width: 260px;
+    margin-right: -100px;
+}
