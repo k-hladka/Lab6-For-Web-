@@ -1,0 +1,94 @@
+body{
+    height: 800px;
+    background-color: black;
+}
+div div:first-of-type{
+    color: lightskyblue;
+}
+span{
+    display: block;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+span:nth-child(2), span:nth-child(3){
+    background-color: white;
+}
+span:nth-child(4), span:first-child{
+    background-color: lightskyblue;
+}
+span:nth-child(3){
+    clear: left;
+}
+span:nth-child(2){
+    border-radius: 0 70% 0 0;
+}
+span:nth-child(3){
+    border-radius: 0 0 0 70%;
+}
+div div:first-of-type{
+    float: left;
+}
+div div:last-of-type{
+    float: right;
+}
+div div:first-of-type, div div:last-of-type{
+    margin: 40px 0;
+}
+div div:first-of-type div:first-of-type{
+    font-size: 300%;
+    margin-bottom: 0;
+    font-family: Arial, serif;
+    text-shadow: 1px 1px 0 #484545,
+    -1px 1px 0 #484545FF,
+    1px -1px 0 #484545FF,
+    -1px -1px 0 #484545FF,
+    6px -2px 1px lightskyblue;
+}
+div div:first-of-type div:last-of-type{
+    margin-top: 0;
+    clear: left;
+    font-size: 300%;
+}
+.container{
+    width: 90%;
+    margin-left: 10%;
+}
+.one{
+    width: 370px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+ol{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    transition-duration: 500ms;
+}
+li:hover{
+    box-shadow: 1px 1px 0 #484545,
+    -1px 1px 0 #484545FF,
+    1px -1px 0 #484545FF,
+    -1px -1px 0 #484545FF,
+    6px -2px 1px lightskyblue;
+}
+li:first-child:hover{
+    transform: translate(-10px, 10px);
+}
+li:nth-child(2):hover{
+    transform: skew(10deg, 10deg);
+}
+li:nth-child(3):hover{
+    transform: rotate(45deg);
+}
+li:nth-child(4):hover{
+    transform: translateY(-9px);
+}
